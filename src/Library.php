@@ -5,7 +5,6 @@ namespace App;
 class Library implements \Countable
 {
     private array $books = [];
-    private int $nextBookIdx = 0;
 
     public function add(Book $book): void
     {
@@ -19,10 +18,10 @@ class Library implements \Countable
 
     public function nextBook(): ?Book
     {
-        if(isset($this->books[$this->nextBookIdx])) {
-            $book = $this->books[$this->nextBookIdx];
-            $this->nextBookIdx++;
+        $book = current($this->books);
 
+        if($book) {
+            next($this->books);
             return $book;
         }
 
