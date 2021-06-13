@@ -21,4 +21,17 @@ class BooksTest extends TestCase
         self::assertEquals($book, $library->nextBook());
         self::assertCount(1, $library);
     }
+
+    public function testNavegarPorTodosOsLivros(): void
+    {
+        $book1 = new Book('O Mundo de Sofia', 'Jostein Gaarder');
+        $book2 = new Book('O Silmarillion', 'J. R. R. Tolkien');
+
+        $library = new Library();
+        $library->add($book1);
+        $library->add($book2);
+
+        self::assertEquals($book1, $library->nextBook());
+        self::assertEquals($book2, $library->nextBook());
+    }
 }
