@@ -2,6 +2,8 @@
 
 namespace Tests;
 
+use App\Book;
+use App\Library;
 use PHPUnit\Framework\TestCase;
 
 class BooksTest extends TestCase
