@@ -18,6 +18,6 @@ class Library implements \Countable
 
     public function nextBook(): ?Book
     {
-        return empty($this->books) ? null : $this->books[0];
+        return $this->books[0] ?? null;
     }
 }
