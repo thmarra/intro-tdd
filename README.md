@@ -2,7 +2,7 @@
 
 Código com exemplos do post "Introdução a  TDD" acessível em:
 
-https://dev.to/thalimarra/
+https://dev.to/thalimarra/introducao-ao-desenvolvimento-guiado-por-testes-tdd-42ed
 
 ## Docker
 O docker-compose aqui presente já contempla o necessário para instalar as bibliotecas necessárias e executar os 
